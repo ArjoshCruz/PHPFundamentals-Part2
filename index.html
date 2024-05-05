@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Order Management</title>
+    <link rel="stylesheet" href="order-management.css" />
+  </head>
+  <body>
+    <div class="main-div">
+      <h1>Welcome to Arjosh's Cafe</h1>
+      <ul>
+        <li>Milktea - 49 PHP</li>
+        <li>Hot/Iced Coffee - 100 PHP</li>
+        <li>Frappe - 90 PHP</li>
+      </ul>
+
+      <form action="om.php" method="POST">
+        <div class="choose-div">
+          <label for="menu">Choose your order: </label>
+
+          <select class="dropdown" name="menu" id="menu">
+            <option value="Milktea">Milktea</option>
+            <option value="Coffee">Coffee</option>
+            <option value="Frappe">Frappe</option>
+          </select>
+        </div>
+
+        <div class="quantity-div">
+          <label for="quantity">Quantity:</label>
+          <input
+            class="quantity-textbox"
+            name="quantity"
+            type="text"
+            placeholder="Enter quantity"
+          />
+        </div>
+
+        <div class="cash-div">
+          <label for="cash">Cash:</label>
+          <input
+            class="cash-textbox"
+            type="text"
+            name="cash"
+            placeholder="Enter amount"
+          />
+        </div>
+
+        <div class="submit-button-div">
+          <input
+            class="submit-button"
+            type="submit"
+            value="ORDER!"
+            name="orderButton"
+          />
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
